@@ -1,0 +1,22 @@
+dualspecies_generate_start_pops = {
+    last_created_species = {
+        set_species_flag = dualspecies_secondary_species@root.owner
+        set_citizenship_type = {
+            country = root.owner
+            type = citizenship_full
+        }
+    }
+    
+    while = {
+        count = 12
+        create_pop = {
+            species = last_created_species
+            ethos = random
+        }
+    }
+    
+    modifier = {
+        pop_ethic_xenophile_attraction_mult = 0.1
+        pop_ethic_xenophobe_attraction_mult = 0.1
+    }
+}

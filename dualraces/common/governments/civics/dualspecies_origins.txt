@@ -1,0 +1,24 @@
+origin_dualspecies_dual_species = {
+    is_origin = yes
+    icon = "gfx/interface/icons/governments/origins/origins_syncretic_evolution.dds"
+    picture = GFX_origin_syncretic_evolution
+    
+    playable = { always = yes }
+    
+    possible = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        civics = { NOT = { value = civic_fanatical_purifiers } }
+    }
+    
+    description = "origin_dualspecies_dual_species_effects"
+    
+    has_secondary_species = {
+        title = origin_tooltip_origin_dual_species
+    }
+    
+    advanced_start = yes
+    
+    random_weight = {
+        base = 5
+    }
+}
