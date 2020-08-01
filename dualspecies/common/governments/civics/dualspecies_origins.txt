@@ -1,7 +1,7 @@
 origin_dualspecies_dual_species = {
     is_origin = yes
-    icon = "gfx/interface/icons/governments/origins/origins_syncretic_evolution.dds"
-    picture = GFX_origin_syncretic_evolution
+    icon = "gfx/interface/icons/origins/unused/unwashed_masses.dds"
+    picture = GFX_origin_unwashed_masses
     
     playable = { always = yes }
     
@@ -13,7 +13,7 @@ origin_dualspecies_dual_species = {
     description = "origin_dualspecies_dual_species_effects"
     
     has_secondary_species = {
-        title = origin_tooltip_origin_dual_species
+        title = origin_tooltip_origin_dualspecies_dual_species
     }
     
     advanced_start = yes

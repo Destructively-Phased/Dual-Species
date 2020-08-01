@@ -8,12 +8,21 @@ dualspecies_generate_start_pops = {
     }
     
     while = {
-        count = 12
+        count = 14
         create_pop = {
             species = last_created_species
             ethos = random
         }
     }
+    
+    while = {
+		count = 14
+		random_pop = {
+			limit = { is_same_species = owner }
+
+			kill_pop = yes
+		}
+	}
     
     modifier = {
         pop_ethic_xenophile_attraction_mult = 0.1
